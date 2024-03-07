@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap'); 
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: papayawhip;
+    font-family: "Outfit", sans-serif;
+}
+.container{
+    max-height: 1800px;
+    max-width: 540px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+h1,
+h2,
+h3{
+    font-family: "Young Serif", serif;
+}
+h1,
+.text{
+    background-color: hsl(0, 0%, 100%);
+    padding-left: 10px;
+}
+h1{
+    padding-bottom: 20px;
+}
+.text{
+    font-size: 13px;
+    line-height: 20px;
+    margin: -10px;
+    margin-left: 0px;
+    color: hsl(30, 10%, 34%);
+
+}
+ul,
+ol{
+    list-style-position: inside;
+}
+.preparation{
+    margin: 30px 15px;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.preparation li{
+    color: hsl(30, 10%, 34%);
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.preparation li::marker{
+    color: hsl(332, 51%, 32%);
+}
+h3{
+    color: hsl(332, 51%, 32%);
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.preparation span{
+    color: hsl(30, 10%, 34%);
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.ingredient{
+    background-color: hsl(0, 0%, 100%);
+}
+h2{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(14, 45%, 36%);
+    margin-left: 15px;
+}
+.list{
+    background-color: hsl(0, 0%, 100%);
+    margin: 30px;
+    padding-left: 20px;
+}
+.list li{
+    margin-left: -25px;
+}
+.list li span{
+    margin-left: 15px;
+}
+.list li,
+.list  span{
+    font-size:14px ;
+    background-color: hsl(0, 0%, 100%);
+}
+p,
+li {
+    line-height: 1.6;
+    color:hsl(30, 10%, 34%);
+}
+
+hr{
+    border: none;
+    border: 1px solid hsl(30, 18%, 87%);
+}
+.instructions{
+    background-color: hsl(0, 0%, 100%);
+}
+li::marker{
+    color:hsl(14, 45%, 36%) ;
+    font-weight: bold;
+}
+.instructions li strong{
+    color: #000000ab;
+    background-color: hsl(0, 0%, 100%);
+}
+.nutrition{
+    background-color: hsl(0, 0%, 100%);
+}
+.nutrition h2{
+    margin-bottom: 20px;
+}
+.nutrition p{
+    background-color: hsl(0, 0%, 100%);
+}
+.nutrition .description{
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+.item{
+    display: flex;
+    border-bottom: 1px solid hsl(30, 18%, 87%) ;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px 30px;
+}
+.item:last-child{
+    border: none;
+}
+.amount{
+    padding-left: 175px;
+    border-bottom: 0;
+    font-weight: 900;
+    color: hsl(14, 45%, 36%);
+}
+.nutrition .item > *{
+    width: 100%;
+    margin-right: auto;
+}
+
+ @media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px; 
+        margin: 0;
+        border-radius: 0;
+    }
+    *{
+        background-color: hsl(0, 0%, 100%);
+    }
+    img {
+        width: 100%;
+        padding: 0;
+        margin: 0; 
+        border-radius: 0;
+    }
+
+    h1{
+        font-size: 45px; 
+        padding-bottom: 10px; 
+        padding: 20px;
+    }
+
+    .text {
+        font-size: 25px; 
+        margin: 0; 
+        line-height: 25px;
+        padding-left: 20px; 
+    }
+
+    .preparation {
+        margin: 10px; 
+        padding: 10px; 
+        background-color: papayawhip;
+    }
+
+    .preparation h3 {
+        font-size: 30px; 
+        padding-bottom: 10px; 
+        background-color: papayawhip;
+    }
+
+    .preparation span {
+        font-size: 20px; 
+    }
+    .preparation ul li,
+    .preparation ul li span{
+        background-color: papayawhip;
+    }
+    .ingredient h2 {
+        font-size: 30px; 
+    }
+
+    .list li span {
+        font-size: 20px;
+
+    }
+    .list li,
+    .list strong {
+        font-size: 20px; 
+    }
+    .nutrition h2 {
+        font-size: 45px; 
+        margin-bottom: 10px; 
+    }
+    .nutrition .description{
+        font-size: 20px;
+    }
+    .nutrition p {
+        font-size: 20px; 
+        margin: 0; 
+        padding-left: 0; 
+        color: hsl(30, 10%, 34%);
+    } 
+.amount {
+        padding-left: 0; 
+        padding-top: 10px; 
+    } 
+} 
