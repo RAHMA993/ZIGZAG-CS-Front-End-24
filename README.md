@@ -1,0 +1,2 @@
+## *Frontend Development*
+Frontend development revolves around crafting the interactive elements of a website or web application that users engage with directly. This encompasses conceptualizing and actualizing the user interface through the utilization of HTML, CSS, and JavaScript. Frontend developers are tasked with guaranteeing that websites boast visually captivating designs while being responsive and operational across diverse devices and browsers. 💻🎨 
