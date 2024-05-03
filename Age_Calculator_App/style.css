@@ -110,13 +110,13 @@ span{
         width: 420px;
         height: 400px;
     }
+    .top{
+        display: inline-block;
+    }
     .input{
         padding-bottom: 20px;
         margin-top: 20px;
         margin-left: 0px;
-    }
-    .top{
-        display: inline-block;
     }
     .input input{
         width: 80px;
@@ -135,7 +135,6 @@ span{
         top: 43%;
         left: 50%;
         transform: translate(-50%,-50%);
-
     }
     .btn img{
         width: 30px;
