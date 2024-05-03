@@ -22,11 +22,16 @@ submitBtn.addEventListener("click", calculateAge);
 
 dayIn.addEventListener("input", (e) => {
     if (+dayIn.value > 31) {
-        errorDay.textContent = "Must be a valid date";
+        errorDay.textContent = "Must be a valid day";
         isValid = false;
+        document.querySelector("#label1").style.color = "hsl(0, 100%, 67%)";
+        document.querySelector("#day").style.borderColor = "hsl(0, 100%, 67%)";
+
         return;
     } else if (+dayIn.value === 0) {
         errorDay.textContent = "This field is required";
+        document.querySelector("#label1").style.color = "hsl(0, 100%, 67%)";
+        document.querySelector("#day").style.borderColor = "hsl(0, 100%, 67%)";
         isValid = false;
         return;
     } else {
@@ -38,7 +43,10 @@ dayIn.addEventListener("input", (e) => {
 
 monthIn.addEventListener("input", (e) => {
     if (+monthIn.value > 12) {
-        errorMonth.textContent = "Must be a valid date";
+        errorMonth.textContent = "Must be a valid month";
+        document.querySelector("#label2").style.color = "hsl(0, 100%, 67%)";
+        document.querySelector("#month").style.borderColor = "hsl(0, 100%, 67%)";
+
         isValid = false;
         return;
     } else {
@@ -48,6 +56,8 @@ monthIn.addEventListener("input", (e) => {
     if (+monthIn.value === 0) {
         isValid = false;
         errorMonth.textContent = "This field is required";
+        document.querySelector("#label2").style.color = "hsl(0, 100%, 67%)";
+        document.querySelector("#month").style.borderColor = "hsl(0, 100%, 67%)";
         isValid = false;
         return;
     } else {
@@ -57,7 +67,10 @@ monthIn.addEventListener("input", (e) => {
 
 yearIn.addEventListener("input", (e) => {
     if (+yearIn.value > 2023) {
-        errorYear.textContent = "Must be a valid date";
+        errorYear.textContent = "Must be a valid year";
+        document.querySelector("#label3").style.color = "hsl(0, 100%, 67%)";
+        document.querySelector("#year").style.borderColor = "hsl(0, 100%, 67%)";
+
         isValid = false;
         return;
     } else {
@@ -67,6 +80,8 @@ yearIn.addEventListener("input", (e) => {
     if (+yearIn.value === 0) {
         isValid = false;
         errorYear.textContent = "This field is required";
+        document.querySelector("#label3").style.color = "hsl(0, 100%, 67%)";
+        document.querySelector("#year").style.borderColor = "hsl(0, 100%, 67%)";
         isValid = false;
         return;
     } else {
