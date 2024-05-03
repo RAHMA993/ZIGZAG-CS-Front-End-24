@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url("./assets/fonts/Poppins-BoldItalic.ttf");
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 94%);
+    min-height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 650px;
+    height: 590px;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 17px 17px 110px 10px;
+    padding: 20px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+}
+.input{    
+    display: inline-block;
+    margin-right:15px ;
+    color:   hsl(0, 1%, 44%);
+    margin-left:30px ;
+    margin-top: 30px;
+}
+.input label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.input input{
+    width: 100px;
+    padding: 10px;
+    font-size: 23px;
+    color: hsl(0, 0%, 8%);
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    display: flex;
+    align-items: center;
+}
+.input input:focus{
+    background-color: white;
+    outline: none;
+}
+.error{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    color: hsl(0, 100%, 67%);
+    text-transform: none;
+    margin-top: 10px;
+}
+.btnContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -15px;
+}
+.btnContent div{
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+.btn{
+    padding: 20px;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    color:  hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.output{
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+    line-height: 60px;
+    font-size: 3.7rem;
+    margin-top: -80px;
+    letter-spacing: -5px;
+    margin-left: 20px;
+}
+span{
+    color: hsl(259, 100%, 65%);
+}
+
+
+@media screen and (max-width:600px)  {
+    *{
+        overflow: hidden;
+    }
+    .container{
+        width: 420px;
+        height: 400px;
+    }
+    .input{
+        padding-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .top{
+        display: inline-block;
+    }
+    .input input{
+        width: 80px;
+        border-radius: 8px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    .btnContent{
+        margin-top: 20px;
+    }
+    .btnContent div{
+        position: relative;
+    }
+    .btn {
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .btn img{
+        width: 30px;
+    }
+    .btnContent div {
+        border: 1px solid hsl(0, 0%, 86%);
+        width: 100%;
+    }
+    .output{
+        margin-top: 40px ;
+        padding-bottom: 20px;
+    }
+    .output h1{
+        margin: 0;
+        line-height: 55px;
+        overflow: hidden;
+        font-size: 4rem;
+    }
+    .output span{
+        font-size: 5rem;
+        margin: auto;
+        
+    }
+}
